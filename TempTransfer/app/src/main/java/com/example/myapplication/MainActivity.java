@@ -24,6 +24,6 @@ public class MainActivity extends AppCompatActivity {
         double degreeC = Double.parseDouble(edtTemp.getText().toString());
         double degreeF = (9.0 * degreeC) / 5.0 + 32.0;
 
-        txvShow.setText("華氏溫度" + degreeF);
+        txvShow.setText("華氏溫度" + String.format("%.2f". degreeF));
     }
 }
